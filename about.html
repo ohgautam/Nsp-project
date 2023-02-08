@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Responsive Website </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+   <section class="sub-header">
+    <nav>
+        <a href="index.html"> <img src="qt.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="about.html"><strong>About</strong></a></li>
+                <li><a href="courses.html"><strong>Courses</strong></a></li>
+             
+                <li><a href="contact.html"><strong>Contact</strong></a></li>
+                <li><a href="qr.html"><strong>QR Code</strong></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   <h1> About Us </h1>
+
+   </section>
+
+
+<!-----------about us content---------->
+
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <h1>1. What is QR Code?</h1>
+        <p>QR code is short for 'quick response' code. It's a square-shaped black-and-white symbol that is scanned with a smartphone or laser to learn more about a product or service. These encrypted squares can hold content, links, coupons, event details, and other information that users want to see.</p>
+       
+        <h1>2. QR Code vs Barcode?</h1>
+        <p>QR codes and barcodes are similar in that they are both visual representations of data, but how the information stored within them is read sets them apart. Barcodes are one-dimensional and the data stored in them is read horizontally. QR codes are two-dimensional and the data stored in them is read horizontally and vertically.</p>
+       
+       <h1>3. How do QR codes work?</h1>
+       <p>Originally designed in Japan for use in the automotive industry, marketers adopted the QR code because of its large storage capacity and ability to translate additional information to consumers beyond what the packaging or advertising of a product could display.
+       <br>
+       <br>Let's say a consumer sees a QR code. They can take out their mobile device, download a free QR code scanning app, or simply use their phone's camera, and scan the QR code to gain more information about what they saw.<br>
+       
+       <h1>4. How To Make a QR Code?</h1>
+       <p>1. Head to qr-code-generator.com.
+       <br><br>
+        2. Enter your URL.
+        <br><br>
+        3. Customize your QR code's frame, shape, and color.
+        <br><br>
+        4. Click 'Download' and save the file to your computer.
+        <br><br>
+        5. Add the QR code to print collateral.</p>
+    
+        <a href="" class=" hero-btn red-btn">Explore Now</a>
+    </div>
+    <div class="about-col">
+        <img src="6.jpeg">
+        <img src="as.jpg">
+    </div>
+</div>
+</section>
+
+<!-------footer------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>India | USA | Canada | UK | Singapore | Australia | UAE</p>
+<div class="icons">
+    <a class="loginfb" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+    
+    <a class="logininsta" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+    <a class="logintwitter" href="https://www.twitter.com/"> <i class="fa fa-twitter"></i></a>
+</div>
+<p>Contact us <i class="fa fa-heart-o"></i> on Social media platform </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--------JavaScript for Toggle Menu------->
+   <script> 
+   var navLinks = document.getElementById("navLinks")
+   function showMenu(){
+      navLinks.style.right = "0";
+   }
+
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+   }
+</script>
+    </body>
+    </html>
