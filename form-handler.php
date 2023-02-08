@@ -1,42 +1,27 @@
 <?php
-//get data from form
 $name = $_POST['name'];
-$visitor_email = $_POST['emailaddress'];
+$visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$to = "osacarist792@gmail.com";
+$email_from = 'noreply@gihub.com';
 
-$subject = 'New Form Submission';
+$email_subject = 'New Form Submission';
 
-$txt ="Name = ". $name . "\r\n Email  = " . "\r\n Subject =" . $subject." \r\n  Message =" . $message;
+$email_body = "User Name: $name.\n".
+"User Email: $visitor_email.\n".
+"Subject: $subject.\n".
+"User Message: $message .\n".;
 
-$headers = "From: noreply@github.com" . "\r\n" .
-"CC: somebodylse@example.com";
-if($email=NULL){
-    mail($to,$subject,$txt,$headers);
-}
- //redirect
- header("Location:contact.html");
- ?>
+$to ='osacarist792@gmail.com';
+
+$headers ="From: $email_form \r\n";
 
 
+$headers ="Reply-to: $visitor_email \r\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+mail($to,$email_subject,$email_body,$headers);
+header("Location: contact.html");
 
 
 
